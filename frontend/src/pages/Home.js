@@ -18,7 +18,7 @@ const Home = () => {
     const getLoggedUser = async () => {
         try {
             console.log('useeffect from home is called');
-            const res = await axios.get(`http://localhost:8000/api/v1/auth/getloggeduser`, {
+            const res = await axios.get(`https://deployment-backend-1fgj.onrender.com/api/v1/auth/getloggeduser`, {
                 withCredentials: true
             })
             if (res.status === 200) {

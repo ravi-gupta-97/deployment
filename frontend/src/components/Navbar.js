@@ -11,7 +11,7 @@ const Navbar = () => {
 
     // api request for Signing-Out for logged-user
     const handleLogout = async () => {
-        const res = await axios.get(`http://localhost:8000/api/v1/auth/signout`, {
+        const res = await axios.get(`https://deployment-backend-1fgj.onrender.com/api/v1/auth/signout`, {
             withCredentials: true
         });
         if (res.status === 200) {

@@ -24,7 +24,7 @@ const EditPage = () => {
         e.preventDefault();
         try {
             console.log(inputs);
-            const res = await axios.put(`http://localhost:8000/api/v1/post/${id}`, {
+            const res = await axios.put(`https://deployment-backend-1fgj.onrender.com/api/v1/post/${id}`, {
                 title: inputs.title,
                 description: inputs.description,
             }, {

@@ -10,7 +10,7 @@ const Post = ({ post, fetchPosts }) => {
     // api request for deleting a post by its Id
     const handleDelete = async () => {
         try {
-            const res = await axios.delete(`http://localhost:8000/api/v1/post/delete/${post._id}`, {
+            const res = await axios.delete(`https://deployment-backend-1fgj.onrender.com/api/v1/post/delete/${post._id}`, {
                 withCredentials: true
             });
             if (res.status === 200) {

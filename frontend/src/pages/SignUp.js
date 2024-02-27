@@ -23,7 +23,7 @@ const SignUp = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post(`http://localhost:8000/api/v1/auth/signup`, inputs);
+            const res = await axios.post(`https://deployment-backend-1fgj.onrender.com/api/v1/auth/signup`, inputs);
             if (res.status === 201) {
                 navigate('/signin');
             }

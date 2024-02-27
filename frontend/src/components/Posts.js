@@ -8,7 +8,7 @@ const Posts = () => {
     // api request to fetch all the posts for logged-in User
     const fetchPosts = async () => {
         try {
-            const res = await axios.get(`http://localhost:8000/api/v1/post/posts`, {
+            const res = await axios.get(`https://deployment-backend-1fgj.onrender.com/api/v1/post/posts`, {
                 withCredentials: true
             });
             if (res.status === 200) {

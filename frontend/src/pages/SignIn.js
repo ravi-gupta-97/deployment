@@ -24,7 +24,7 @@ const SignIn = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post(`http://localhost:8000/api/v1/auth/signin`, inputs, {
+            const res = await axios.post(`https://deployment-backend-1fgj.onrender.com/api/v1/auth/signin`, inputs, {
                 withCredentials: true
             });
             if (res.status === 200) {
