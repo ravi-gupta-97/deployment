@@ -54,7 +54,8 @@ export const signIn = async (req, res, next) => {
             const { password, ...otherDetails } = user._doc;
             return res.cookie('access', token, {
                 expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
-                httpOnly: true
+                httpOnly: true,
+                secure: true
             }).status(200).json({ otherDetails });
         }
     } catch (error) {
