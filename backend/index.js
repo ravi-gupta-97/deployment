@@ -12,7 +12,7 @@ const app = express();
 
 // middlewares for app
 app.use(cors({
-    origin: `http://localhost:3000`,
+    origin: `https://deployment-frontend-emd3.onrender.com`,
     credentials: true
 }));
 app.use(cookieParser());
