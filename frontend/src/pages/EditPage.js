@@ -42,7 +42,7 @@ const EditPage = () => {
     useEffect(() => {
         (
             async () => {
-                const res = await axios.get(`http://localhost:8000/api/v1/post/${id}`, {
+                const res = await axios.get(`https://deployment-backend-1fgj.onrender.com/api/v1/post/${id}`, {
                     withCredentials: true
                 });
                 if (res.status === 200) {
